@@ -5,5 +5,7 @@ const App = () => {
         <Router>
             <h1>this is App</h1>
         </Router>
-    )
-}
+    );
+};
+
+export default App;
