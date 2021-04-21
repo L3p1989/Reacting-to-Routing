@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
 
+import PeopleCard from "../components/PeopleCard";
+
 const People = () => {
     const [people, setPeople] = useState([])
 
@@ -18,6 +20,9 @@ const People = () => {
                 <h1 className="display-4">Studio Ghibli Characters</h1>
             </div>
             <div className="row justify-content-center mt-4">
+                {people.map(person => (
+                    <PeopleCard key={person.id} {...person} />
+                ))}
             </div>
         </div>
     );
