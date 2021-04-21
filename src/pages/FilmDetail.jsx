@@ -12,7 +12,7 @@ const FilmDetail = () => {
             setFilm(details);
         }
         getDetails();
-    }, []);
+    }, [filmid]);
 
     return (
         <div className="container text-center">
