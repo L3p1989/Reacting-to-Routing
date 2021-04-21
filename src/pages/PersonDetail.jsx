@@ -17,7 +17,7 @@ const PersonDetail = () => {
     return (
         <div className="container text-center">
             <div className="row justify-content-center">
-                <h1 className="display-4">{person.Name}</h1>
+                <h1 className="display-4">{person.name}</h1>
             </div>
             <div className="row justify-content-center">
                 <p>Gender: {person.gender}</p>
