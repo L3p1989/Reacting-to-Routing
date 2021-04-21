@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
 
+import FilmsCard from '../components/FilmsCard';
+
 const Films = () => {
     const [films, setFilms] = useState([])
 
@@ -18,7 +20,9 @@ const Films = () => {
                 <h1>Films</h1>
             </div>
             <div className="row justify-content-center mt-4">
-                <p>insert cards here</p>
+                {films?.map(film => (
+                    <FilmsCard key={film.id} {...film} />
+                ))}
             </div>
         </div>
     );
