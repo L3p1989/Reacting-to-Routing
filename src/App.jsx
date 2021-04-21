@@ -1,9 +1,11 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
+import NavBar from './components/NavBar';
+
 const App = () => {
     return (
         <Router>
-            <h1>this is App</h1>
+            <NavBar />
         </Router>
     );
 };
