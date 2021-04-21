@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import NavBar from './components/NavBar';
 import Home from './pages/Home';
 import Films from './pages/Films';
+import FilmDetail from './pages/FilmDetail';
 
 const App = () => {
     return (
@@ -16,7 +17,7 @@ const App = () => {
                     <Films />
                 </Route>
                 <Route exact path="/films/:filmid">
-                    <h1>Film details</h1>
+                    <FilmDetail />
                 </Route>
             </Switch>
         </Router>
