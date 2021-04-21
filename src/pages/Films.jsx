@@ -15,9 +15,9 @@ const Films = () => {
     }, [])
 
     return (
-        <div className="container mt-2">
+        <div className="container mt-3">
             <div className="row justify-content-center">
-                <h1>Films</h1>
+                <h1 className="display-4">Studio Ghibli Films</h1>
             </div>
             <div className="row justify-content-center mt-4">
                 {films?.map(film => (
