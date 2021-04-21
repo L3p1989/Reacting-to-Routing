@@ -7,8 +7,8 @@ const NavBar = () => {
                 <img src="https://ghibliapi.herokuapp.com/images/logo.svg" alt="" className="navbar-brand" style={{ height: "3em" }} />
                 <ul className="navbar mr-auto">
                     <Link to="/" className="nav-link">Home</Link>
-                    <Link to="/Films" className="nav-link">Films</Link>
-                    <Link to="/People" className="nav-link">People</Link>
+                    <Link to="/films" className="nav-link">Films</Link>
+                    <Link to="/people" className="nav-link">People</Link>
                 </ul>
             </nav>
         </>
