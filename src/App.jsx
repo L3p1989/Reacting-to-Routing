@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Films from './pages/Films';
 import FilmDetail from './pages/FilmDetail';
 import People from './pages/People';
+import PersonDetail from './pages/PersonDetail';
 
 const App = () => {
     return (
@@ -22,6 +23,9 @@ const App = () => {
                 </Route>
                 <Route exact path="/people">
                     <People />
+                </Route>
+                <Route exact path="/people/:personid">
+                    <PersonDetail />
                 </Route>
             </Switch>
         </Router>
