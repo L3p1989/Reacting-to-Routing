@@ -20,7 +20,7 @@ const Films = () => {
                 <h1 className="display-4">Studio Ghibli Films</h1>
             </div>
             <div className="row justify-content-center mt-4">
-                {films?.map(film => (
+                {films.map(film => (
                     <FilmsCard key={film.id} {...film} />
                 ))}
             </div>
