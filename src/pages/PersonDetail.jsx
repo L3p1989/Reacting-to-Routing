@@ -12,7 +12,7 @@ const PersonDetail = () => {
             setPerson(details);
         }
         getDetails();
-    }, []);
+    }, [personid]);
 
     return (
         <div className="container text-center">
